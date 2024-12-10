@@ -31,14 +31,35 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 /* write all the steps invloved */
 
 **PROGRAM**
-
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+```
+/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+```
+```
+Developed by:S.Dharshini
+RegisterNumber:24901197
+*/module experiment8(D,c1k,Q,Qbar);
+input D,c1k;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge c1k)
+begin
+Q=D;
+Qbar=~D;
+end
+endmodule
+```
 
 **RTL LOGIC FOR FLIPFLOPS**
+![WhatsApp Image 2024-12-10 at 13 41 35_0e10f704](https://github.com/user-attachments/assets/43fbc06f-49d8-46e0-aceb-b67c6e8678b4)
+
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+![WhatsApp Image 2024-12-10 at 13 41 36_f1fe732e](https://github.com/user-attachments/assets/439f27da-bc48-4564-add0-6cad1d87e96d)
+
 
 
 **RESULTS**
+Implementation-of-D-flipflop-using-verilog is verified
